@@ -8,7 +8,7 @@ import pandas
 import plotly_express as px
 from typing import Tuple
 
-from WeatherDataFrame2 import WeatherDataFrame
+from WeatherDataFrame import WeatherDataFrame
 
 
 class Dashboard:
