@@ -1,5 +1,4 @@
 
 *.pyc
-*.pyc
 __pycache__/ApiConnector.cpython-38.pyc
 __pycache__/Dashboard.cpython-38.pyc

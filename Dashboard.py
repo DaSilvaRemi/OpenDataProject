@@ -79,7 +79,26 @@ class Dashboard:
 
     def create_histogramme_fig(self) -> object:
         """
-        Créer un histogramme selon dans l'intervalle [-8; 41[
+        Créer un histogramme de la moyenne de température dans l'intervalle [-8; 41[
+
+        Returns
+        -------
+            Un NumPy Histogram avec les données formaté dans un plotly bar
+        """
+
+        counts_city, bins = np.histogram(self.map_data_frame["temp_C"], [-8, 0, 6, 11, 16, 21, 26, 31, 36, 41])
+        bins = 0.5 * (bins[:-1] + bins[1:])
+
+        return px.bar(self.map_data_frame,
+                      title='Histogramme du nombre de villes dans un intervalle de température',
+                      x=bins,
+                      y=counts_city,
+                      labels={'x': 'Température moyenne annuelle', 'y': 'Nombres de villes'}
+                      )
+
+    def create_complete_histogramme_fig(self) -> object:
+        """
+        Créer un histogramme selon le jeu de données dans l'intervalle [-8; 41[
 
         Returns
         -------
@@ -89,11 +108,11 @@ class Dashboard:
         counts_city, bins = np.histogram(self.fig_data_frame["temp_C"], [-8, 0, 6, 11, 16, 21, 26, 31, 36, 41])
         bins = 0.5 * (bins[:-1] + bins[1:])
 
-        return px.bar(self.map_data_frame,
-                      title='Histogramme du nombre de villes dans un intervalle de température',
+        return px.bar(self.fig_data_frame,
+                      title='Histogramme du nombre d\'enregistrements dans un intervalle de température',
                       x=bins,
                       y=counts_city,
-                      labels={'x': 'Température moyenne annuelle', 'y': 'Nombres de villes'}
+                      labels={'x': 'Température moyenne', 'y': 'Nombres d enregistrement'}
                       )
 
     def create_fig_group_by_region(self, month_limit: Tuple[str, str] = ('1', '12')) -> object:
@@ -120,7 +139,7 @@ class Dashboard:
                           size='temp_C',
                           hover_name='commune_name',
                           hover_data=['longitude', 'latitude', 'mois'],
-                          labels={'temp_C': 'Température moyenne', 'nom_dept': 'Nom département'},
+                          labels={'temp_C': 'Température moyenne', 'nom_dept': 'Nom département'}
                           )
 
     def create_dash(self, histogramme_fig: object, scatter_fig: object) -> None:
@@ -221,5 +240,5 @@ class Dashboard:
         Affiche le dashboard en créant la carte, l'histogramme et le dashboard
         """
         self.create_map()
-        self.create_dash(self.create_histogramme_fig(), self.create_fig_group_by_region())
+        self.create_dash(self.create_histogramme_fig(), self.create_complete_histogramme_fig(), self.create_fig_group_by_region())
         self.run_dash()
