@@ -2,7 +2,7 @@
 
     Par DA SILVA REMI et GAO CHANG
 
-    Lien de notre repository faite `git clone https://git.esiee.fr/dasilvar/dasilvaremi_gaochang_opendataproject.git`
+Pour cloner notre repoistory faite `git clone https://git.esiee.fr/dasilvar/dasilvaremi_gaochang_opendataproject.git`
 
 # Description
 L'objectif du mini projet est de traiter un sujet d'intérêt public. Nous utiliserons des données publiques d'Open Data.
@@ -69,13 +69,13 @@ Soit, vous clonez notre repository via git, afin de faire cela vous pouvez suivr
 Afin d'installer git aller sur le [site officiel de git](https://git-scm.com/downloads), puis choisissez votre OS et suivez les étapes d'installation.
 
 #### Configuration de git
-Il est possible que pour cloner notre repository, cela peut vous demandez de vous connecter. 
-Si cela vous arrive connectez, vous avec votre compte gitlab en configurant git avec les commandes çi-dessous :
+Il est possible que pour cloner notre repository, vous devez vous connecter. 
+Si cela vous arrive connecter vous, avec votre compte gitlab en configurant git avec les commandes çi-dessous :
 - `git config --global user.name userName`
 - `git config --global user.email user@example.com`
 
 ##### Cloner notre repository
-Pour clonez notre repository lancer git bash et allez sur un répertoire ou vous voulez sauvegarder notre code source puis faite : 
+Pour cloner notre repository lancer git bash et allez sur un répertoire où vous souhaitez sauvegarder notre code source puis faite : 
 `git clone https://git.esiee.fr/dasilvar/dasilvaremi_gaochang_opendataproject.git`
 
 ### Les outils
@@ -87,12 +87,11 @@ Il vous sera nécessaire lors de l'installation d'anaconda de cocher l'option po
   - ![OptionAnaconda.png](images/OptionAnaconda.png)
 
 
-##Configuration d'anaconda
-Afin d'assurer le bon fonctionnement du projet vous devez d'abord configurer anaconda en suivant soit l'étape 1 ou 2
+## Configuration d'anaconda
+Afin d'assurer le bon fonctionnement du projet vous devez d'abord configurer anaconda en suivant soit l'étape 1 ou 2.
 
 **Remarque : Si vous suivez l'étape 2 vous aurez beaucoup plus de librairies qui seront installé que dans l'étape 1.
-C'est normal, car dans l'étape 1 nous mettons uniquement les librairies qui sont utilisé par notre projet.
-Alors que dans la deuxième étape, c'est toutes les librairies qu'Anaconda à installer lors de la création d'un environnement et les librairies de notre projet**
+C'est normal, car dans l'étape 1 nous mettons uniquement les librairies qui sont utilisé par notre projet. Alors que dans la deuxième étape, c'est toutes les librairies qu'Anaconda à installer lors de la création d'un environnement et les librairies de notre projet**
 
 1) Configuration manuelle
 Merci de suivre les étapes çi-dessous pour vous assurer d'avoir votre anaconda de configurer.
@@ -104,7 +103,7 @@ Veuillez exécuter cette commande `conda create --name complete --file requireme
 
 Après avoir suivi une des deux étapes vous pouvez passer à l'étape [Executer notre application](#Executer notre application).
 
-####Creation d'environnement anaconda
+#### Creation d'environnement anaconda
 Vous devrez créer un nouvel environnement Anaconda que vous appellerez avec le nom de votre choix, dans notre cas nous l'avons appelé "complete"
 Afin de créer un environnement anaconda en ligne de commande merci d'exécuter cette ligne `conda create --name complete`. Vous pouvez remplacer le complete par le nom de votre choix pour l'environnement.
 
