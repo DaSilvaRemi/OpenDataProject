@@ -142,7 +142,7 @@ class Dashboard:
                           labels={'temp_C': 'Température moyenne', 'nom_dept': 'Nom département'}
                           )
 
-    def create_dash(self, histogramme_fig: object, scatter_fig: object) -> None:
+    def create_dash(self, histogramme_fig: object, complete_histogram: object, scatter_fig: object) -> None:
         """
         Créer un dashboard/application web à partir d'une map et d'un histogramme
 
@@ -191,6 +191,29 @@ class Dashboard:
                         dcc.Graph(
                             id='Histogramme',
                             figure=histogramme_fig
+                        )
+                    ]),
+
+                html.Div(
+                    children=[
+                        html.Div(
+                            children=[
+                                html.H2(
+                                    children=f'''L'histogramme du nombre d'enregistrement sur un intervalle de température
+                                                                 définie sur un an''',
+                                    style={'textAlign': 'center', 'color': '#7FDBFF'}
+                                ),
+
+                                html.P(
+                                    children=f'''L'histogramme complet çi-dessus montre le nombre d'enregistrement qui sont concerné
+                                                         par un intervalle de température.
+                                            '''
+                                )
+                            ]),
+
+                        dcc.Graph(
+                            id='Compley=te histogramme',
+                            figure=complete_histogram
                         )
                     ]),
 
