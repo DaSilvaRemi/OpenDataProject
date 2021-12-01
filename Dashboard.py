@@ -96,24 +96,6 @@ class Dashboard:
                       labels={'x': 'Température moyenne annuelle', 'y': 'Nombres de villes'}
                       )
 
-    def create_complete_histogramme_fig(self) -> object:
-        """
-        Créer un histogramme selon le jeu de données dans l'intervalle [-8; 41[
-
-        Returns
-        -------
-            Un NumPy Histogram avec les données formaté dans un plotly bar
-        """
-
-        counts_city, bins = np.histogram(self.fig_data_frame["temp_C"], [-8, 0, 6, 11, 16, 21, 26, 31, 36, 41])
-        bins = 0.5 * (bins[:-1] + bins[1:])
-
-        return px.bar(self.fig_data_frame,
-                      title='Histogramme du nombre d\'enregistrements dans un intervalle de température',
-                      x=bins,
-                      y=counts_city,
-                      labels={'x': 'Température moyenne', 'y': 'Nombres d enregistrement'}
-                      )
 
     def create_fig_group_by_region(self, month_limit: Tuple[str, str] = ('1', '12')) -> object:
         """
@@ -132,6 +114,8 @@ class Dashboard:
         tmp_data_frame = self.fig_data_frame.query('mois >= ' + month_limit[0] + ' and mois <=' + month_limit[1]
                                                    + ' and temp_C >= 0')
 
+                                                   
+
         return px.scatter(tmp_data_frame,
                           x='nom_dept',
                           y='temp_C',
@@ -142,7 +126,7 @@ class Dashboard:
                           labels={'temp_C': 'Température moyenne', 'nom_dept': 'Nom département'}
                           )
 
-    def create_dash(self, histogramme_fig: object, complete_histogram: object, scatter_fig: object) -> None:
+    def create_dash(self, histogramme_fig: object, scatter_fig: object) -> None:
         """
         Créer un dashboard/application web à partir d'une map et d'un histogramme
 
@@ -199,29 +183,6 @@ class Dashboard:
                         html.Div(
                             children=[
                                 html.H2(
-                                    children=f'''L'histogramme du nombre d'enregistrement sur un intervalle de température
-                                                                 définie sur un an''',
-                                    style={'textAlign': 'center', 'color': '#7FDBFF'}
-                                ),
-
-                                html.P(
-                                    children=f'''L'histogramme complet çi-dessus montre le nombre d'enregistrement qui sont concerné
-                                                         par un intervalle de température.
-                                            '''
-                                )
-                            ]),
-
-                        dcc.Graph(
-                            id='Compley=te histogramme',
-                            figure=complete_histogram
-                        )
-                    ]),
-
-                html.Div(
-                    children=[
-                        html.Div(
-                            children=[
-                                html.H2(
                                     children=f'Evolution des températures des villes par régions sur une année',
                                     style={'textAlign': 'center', 'color': '#7FDBFF'}),
 
@@ -263,5 +224,5 @@ class Dashboard:
         Affiche le dashboard en créant la carte, l'histogramme et le dashboard
         """
         self.create_map()
-        self.create_dash(self.create_histogramme_fig(), self.create_complete_histogramme_fig(), self.create_fig_group_by_region())
+        self.create_dash(self.create_histogramme_fig(), self.create_fig_group_by_region())
         self.run_dash()
