@@ -155,7 +155,7 @@ classDiagram
         +create_map()
         +Object create_histogramme_fig()
         +Object create_complete_histogramme_fig()
-        +Object create_fig_group_by_region(Tuple[String, String] month_limit)
+        +Object create_bubble_graph(Tuple[String, String] month_limit)
         +create_dash(Object histogramme_fig, Object scatter_fig)
         +run_dash()
         +show_dash()

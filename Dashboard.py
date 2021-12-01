@@ -96,8 +96,7 @@ class Dashboard:
                       labels={'x': 'Température moyenne annuelle', 'y': 'Nombres de villes'}
                       )
 
-
-    def create_fig_group_by_region(self, month_limit: Tuple[str, str] = ('1', '12')) -> object:
+    def create_bubble_graph(self, month_limit: Tuple[str, str] = ('1', '12')) -> object:
         """
         Créer un graph étiqueté selon les régions
 
@@ -111,16 +110,19 @@ class Dashboard:
             Un Plotly Express Scatter avec les données formaté
         """
 
-        tmp_data_frame = self.fig_data_frame.query('mois >= ' + month_limit[0] + ' and mois <=' + month_limit[1]
-                                                   + ' and temp_C >= 0')
+        tmp_data_frame = self.fig_data_frame.query('mois >= ' + month_limit[0] +
+                                                   ' and mois <=' + month_limit[1])
 
-                                                   
+        tmp_data_frame = tmp_data_frame.groupby(['commune_code', 'commune_name', 'region_name',
+                                                 'nom_dept', 'longitude', 'latitude', 'mois'],
+                                                as_index=False).temp_C.mean()
+        tmp_data_frame['size'] = tmp_data_frame['temp_C'].abs()
 
         return px.scatter(tmp_data_frame,
                           x='nom_dept',
                           y='temp_C',
                           color='region_name',
-                          size='temp_C',
+                          size='size',
                           hover_name='commune_name',
                           hover_data=['longitude', 'latitude', 'mois'],
                           labels={'temp_C': 'Température moyenne', 'nom_dept': 'Nom département'}
@@ -224,5 +226,5 @@ class Dashboard:
         Affiche le dashboard en créant la carte, l'histogramme et le dashboard
         """
         self.create_map()
-        self.create_dash(self.create_histogramme_fig(), self.create_fig_group_by_region())
+        self.create_dash(self.create_histogramme_fig(), self.create_bubble_graph())
         self.run_dash()
