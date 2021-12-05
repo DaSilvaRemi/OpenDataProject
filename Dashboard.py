@@ -1,6 +1,7 @@
 import branca
 import dash
 import dash_core_components as dcc
+import dash.dependencies as dpd
 import dash_html_components as html
 import folium
 import numpy as np
@@ -98,7 +99,7 @@ class Dashboard:
 
     def create_bubble_graph(self, month_limit: Tuple[str, str] = ('1', '12')) -> object:
         """
-        Créer un graph étiqueté selon les régions
+        Créer un graphe à bulle montrant l'évolution des températures
 
         Parameters
         ----------
@@ -140,6 +141,20 @@ class Dashboard:
         scatter_fig : object
             La figure plotly représentant le scatter groupé par region
         """
+        month_drop_down_option = [
+            {'label': 'Janvier', 'value': '1'},
+            {'label': 'Février', 'value': '2'},
+            {'label': 'Mars', 'value': '3'},
+            {'label': 'Avril', 'value': '4'},
+            {'label': 'Mai', 'value': '5'},
+            {'label': 'Juin', 'value': '6'},
+            {'label': 'Juillet', 'value': '7'},
+            {'label': 'Août', 'value': '8'},
+            {'label': 'Septembre', 'value': '9'},
+            {'label': 'Octobre', 'value': '10'},
+            {'label': 'Novembre', 'value': '11'},
+            {'label': 'Décembre', 'value': '12'}
+        ]
 
         self.app.layout = html.Div(
             children=[
@@ -165,18 +180,18 @@ class Dashboard:
                                                          définie sur un an''',
                                     style={'textAlign': 'center', 'color': '#7FDBFF'}
                                 ),
-
-                                html.P(
-                                    children=f'''L'histogramme çi-dessus montre le nombre de villes qui sont concerné
-                                                 par un intervalle de température.
-                                                 Cela nous permet d'en déduire les moyennes et tendances de températures en France.
-                                    '''
-                                )
                             ]),
 
                         dcc.Graph(
                             id='Histogramme',
                             figure=histogramme_fig
+                        ),
+
+                        html.P(
+                            children=f'''L'histogramme çi-dessus montre le nombre de villes qui sont concerné
+                                    par un intervalle de température.
+                                    Cela nous permet d'en déduire les moyennes et tendances de températures en France.
+                                    '''
                         )
                     ]),
 
@@ -188,8 +203,21 @@ class Dashboard:
                                     children=f'Evolution des températures des villes par régions sur une année',
                                     style={'textAlign': 'center', 'color': '#7FDBFF'}),
 
-                                html.P(children=f'''Le graphe l'évolution de la température sur une année''')
+                                html.P(
+                                    children=f'''Le graphe çi-dessous est le graphe de l'évolution de la température sur une année''')
                             ]),
+
+                        dcc.Dropdown(
+                            id='start_month_dropdown',
+                            options=month_drop_down_option,
+                            value='1'
+                        ),
+
+                        dcc.Dropdown(
+                            id='end_month_dropdown',
+                            options=month_drop_down_option,
+                            value='1'
+                        ),
 
                         dcc.Graph(
                             id='Scatter graph',

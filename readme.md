@@ -35,13 +35,13 @@ Les données seront découpées selon les intervalles suivante :
 ## Analyse de l'histogramme
 L'histogramme que vous trouvez çi-dessous à été générée selon les données de 2021.
 Nous pouvons tout d'abord remarqué que la température moyenne oscille entre -5 et 35 C°. Nous apercevons une température moyenne globale de 13.5 °C en France, nous pouvons en conclure que les températures ont été assez froide en 2021.
-![Histrogramme 2021](images/Histogramme2021.png)
+![Histogramme météo 2021](images/Histogramme2021.png)
 
 ## Analyse de l'évolution de température en 2021
 Le graph que vous voyez çi dessous est l'évolution des températures pour une région sur l'année 2021. 
-Nous remarquons que les températures sont assez égale en 2021 pour un même mois, cependant nous pouvons remarquez des très fortes températures dans les DOM-TOM.
+Nous remarquons que les températures sont assez égale en 2021 pour un même mois, cependant nous pouvons remarquer de très fortes températures dans les DOM-TOM.
 Nous pouvons donc déjà établir une première hyptohèse que les DOM-TOM ont des températures bien plus élevé que le reste de la France. Nous vérifierons cette hypothèse dans la prochaine partie.
-![Graph évolution température 2021](images/GraphEvolTemperature2021.png)
+![Graphe evolution température 2021](images/GrapheEvol2021.png)
 
 ## Analyse de la carte
 La carte çi-dessous est la carte météo selon les données de 2021.
@@ -52,7 +52,7 @@ Nous pouvons donc en conclure que les températures de la France sont assez froi
 ![Carte météo métropole](images/CarteMeteoMetropole2021.png)
 
 La carte çi-dessous est la carte météo en Guyane selon les données de 2021.
-Contrairement à la carte précedente les températures sont bien plus élevés étant donné qu'elles oscillent entre 25 et 31 °C.
+Contrairement à la carte précedente les températures sont bien plus élevés étant donné qu'elles oscillent entre 25 et 29 °C.
 Nous pouvons donc en conclure que les DOM-TOM du SUD ont des températures bien plus chaudes que celle de la France et ont donc moins de température froide en dessous de 20°C.
 ![Carte météo guyane](images/CarteMeteoGuyane2021.png)
 
@@ -120,6 +120,7 @@ Il est nécessaire de télécharger avec Anaconda toutes ces librairies :
 
 ## Executer notre application
 En respectant les prérequis précédemment cités, exécuter les commandes suivantes sur le CMD anaconda (Anaconda Prompt) afin de lancer notre programme :
+- `conda activate complete`
 - `cd CheminVersLeRépertoireDuProjet\OpenDataProject`
 - `python main.py`
 Une fois le programme exécuté vous verrez apparaitre une URL sur le CMD anaconda copiez là et collez là sur votre navigateur. Dans notre cas l'url est la suivante :
@@ -147,14 +148,13 @@ classDiagram
     }
 
     class Dashboard {
-        +Dict app
+        +dash.Dash app
         +String map_file_name
         +pd.DataFrame fig_data_frame
         +pd.DataFrame map_data_frame
         +get_map_dataframe(WeatherDataFrame weather_data_frame)
         +create_map()
         +Object create_histogramme_fig()
-        +Object create_complete_histogramme_fig()
         +Object create_bubble_graph(Tuple[String, String] month_limit)
         +create_dash(Object histogramme_fig, Object scatter_fig)
         +run_dash()
