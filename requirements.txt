@@ -9,4 +9,3 @@ folium
 pandas
 plotly
 plotly_express
-json

@@ -79,7 +79,7 @@ Pour cloner notre repository lancer git bash et allez sur un répertoire où vou
 `git clone https://git.esiee.fr/dasilvar/dasilvaremi_gaochang_opendataproject.git`
 
 ### Les outils
-Afin d'exécuter notre application, il vous sera donc nécessaire d'avoir python, dans notre cas pour faciliter l'installation des librairies et de python nous utiliserons le gestionnaire Anaconda.
+Afin d'exécuter notre application, il vous sera donc nécessaire d'avoir python. Afin de faciliter l'installation nous utilisons dans notre cas le gestionnaire Anaconda.
 - [Anaconda Invidual Edition](https://www.anaconda.com/products/individual) : C'est un package disposant des éléments suivant :
   - Le gestionnaire Anaconda permettant d'installer les libraires souhaité avec une interface graphique ou en ligne de commande
   - Python 3.8 permettant d'éxécuter notre application 
@@ -87,19 +87,18 @@ Il vous sera nécessaire lors de l'installation d'anaconda de cocher l'option po
   - ![OptionAnaconda.png](images/OptionAnaconda.png)
 
 
-## Configuration d'anaconda
-Afin d'assurer le bon fonctionnement du projet vous devez d'abord configurer anaconda en suivant soit l'étape 1 ou 2.
+## Configuration du projet
+Afin d'assurer le bon fonctionnement du projet vous devez d'abord configurer le projet en suivant soit l'étape 1 ou 2.
 
-**Remarque : Si vous suivez l'étape 2 vous aurez beaucoup plus de librairies qui seront installé que dans l'étape 1.
-C'est normal, car dans l'étape 1 nous mettons uniquement les librairies qui sont utilisé par notre projet. Alors que dans la deuxième étape, c'est toutes les librairies qu'Anaconda à installer lors de la création d'un environnement et les librairies de notre projet**
+**Remarque : Si vous suivez l'étape 1 vous aurez besoin d'anaconda**
 
-1) Configuration manuelle
+1) Configuration avec Anaconda
 Merci de suivre les étapes çi-dessous pour vous assurer d'avoir votre anaconda de configurer.
 - [Création d'environnement anaconda](#Creation d'environnement anaconda)
 - [Les librairies](#Les librairies)
 
-2) Configuration par fichier requirement.txt
-Veuillez exécuter cette commande `conda create --name complete --file requirements.txt`.
+2) Configuration par fichier requirement.txt avec pip
+Veuillez exécuter cette commande `pip install -r requirements.txt`.
 
 Après avoir suivi une des deux étapes vous pouvez passer à l'étape [Executer notre application](#Executer notre application).
 
@@ -110,7 +109,6 @@ Afin de créer un environnement anaconda en ligne de commande merci d'exécuter 
 #### Les librairies
 Il est nécessaire de télécharger avec Anaconda toutes ces librairies :
 - [BRANCA](https://anaconda.org/conda-forge/branca) `conda install -c conda-forge branca`
-- [JSON](https://anaconda.org/jmcmurray/json) `conda install -c jmcmurray json`
 - [DASH](https://anaconda.org/conda-forge/dash) `conda install -c conda-forge dash`
 - [DASH-CORE-COMPONENTS](https://anaconda.org/conda-forge/dash-core-components) `conda install -c conda-forge dash-core-components`
 - [DASH-HTML-COMPONENTS](https://anaconda.org/conda-forge/dash-html-components) `conda install -c conda-forge dash-html-components`
