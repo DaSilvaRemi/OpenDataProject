@@ -34,7 +34,7 @@ Les données seront découpées selon les intervalles suivante :
 
 ## Analyse de l'histogramme
 L'histogramme que vous trouvez çi-dessous à été générée selon les données de 2021.
-Nous pouvons tout d'abord remarqué que la température moyenne oscille entre -5 et 35 C°. Nous apercevons une température moyenne globale de 13.5 °C en France, nous pouvons en conclure que les températures ont été assez froide en 2021.
+Nous pouvons tout d'abord remarqué que la température moyenne oscille entre 3 et 35 C°. Nous apercevons une température moyenne globale de 13.5 °C en France, nous pouvons en conclure que les températures ont été assez froide en 2021.
 ![Histogramme météo 2021](images/Histogramme2021.png)
 
 ## Analyse de l'évolution de température en 2021

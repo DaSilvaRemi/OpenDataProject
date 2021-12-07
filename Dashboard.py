@@ -1,7 +1,6 @@
 import branca
 import dash
 import dash_core_components as dcc
-import dash.dependencies as dpd
 import dash_html_components as html
 import folium
 import numpy as np
@@ -80,7 +79,7 @@ class Dashboard:
 
     def create_histogramme_fig(self) -> object:
         """
-        Créer un histogramme de la moyenne de température dans l'intervalle [-8; 41[
+        Créer un histogramme de la moyenne de température dans l'intervalle [-8 ; 41[
 
         Returns
         -------
@@ -141,20 +140,6 @@ class Dashboard:
         scatter_fig : object
             La figure plotly représentant le scatter groupé par region
         """
-        month_drop_down_option = [
-            {'label': 'Janvier', 'value': '1'},
-            {'label': 'Février', 'value': '2'},
-            {'label': 'Mars', 'value': '3'},
-            {'label': 'Avril', 'value': '4'},
-            {'label': 'Mai', 'value': '5'},
-            {'label': 'Juin', 'value': '6'},
-            {'label': 'Juillet', 'value': '7'},
-            {'label': 'Août', 'value': '8'},
-            {'label': 'Septembre', 'value': '9'},
-            {'label': 'Octobre', 'value': '10'},
-            {'label': 'Novembre', 'value': '11'},
-            {'label': 'Décembre', 'value': '12'}
-        ]
 
         self.app.layout = html.Div(
             children=[
@@ -204,7 +189,8 @@ class Dashboard:
                                     style={'textAlign': 'center', 'color': '#7FDBFF'}),
 
                                 html.P(
-                                    children=f'''Le graphe çi-dessous est le graphe de l'évolution de la température sur une année''')
+                                    children=f'''Le graphe çi-dessous est le graphe de l'évolution
+                                     de la température sur une année''')
                             ]),
 
                         dcc.Graph(
