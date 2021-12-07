@@ -86,27 +86,26 @@ Afin d'exécuter notre application, il vous sera donc nécessaire d'avoir python
 Il vous sera nécessaire lors de l'installation d'anaconda de cocher l'option pour set la variable PATH de windows.
   - ![OptionAnaconda.png](images/OptionAnaconda.png)
 
-
-## Configuration du projet
+### Configuration du projet
 Afin d'assurer le bon fonctionnement du projet vous devez d'abord configurer le projet en suivant soit l'étape 1 ou 2.
 
 **Remarque : Si vous suivez l'étape 1 vous aurez besoin d'anaconda**
 
 1) Configuration avec Anaconda
 Merci de suivre les étapes çi-dessous pour vous assurer d'avoir votre anaconda de configurer.
-- [Création d'environnement anaconda](#Creation d'environnement anaconda)
-- [Les librairies](#Les librairies)
+- [Création d'environnement anaconda](#40)
+- [Les librairies](#41)
 
 2) Configuration par fichier requirement.txt avec pip
 Veuillez exécuter cette commande `pip install -r requirements.txt`.
 
 Après avoir suivi une des deux étapes vous pouvez passer à l'étape [Executer notre application](#Executer notre application).
 
-#### Creation d'environnement anaconda
+<h2 id="40">Creation d'environnement anaconda</h2>
 Vous devrez créer un nouvel environnement Anaconda que vous appellerez avec le nom de votre choix, dans notre cas nous l'avons appelé "complete"
 Afin de créer un environnement anaconda en ligne de commande merci d'exécuter cette ligne `conda create --name complete`. Vous pouvez remplacer le complete par le nom de votre choix pour l'environnement.
 
-#### Les librairies
+###<h3 id="41"> Les librairies</h3>
 Il est nécessaire de télécharger avec Anaconda toutes ces librairies :
 - [BRANCA](https://anaconda.org/conda-forge/branca) `conda install -c conda-forge branca`
 - [DASH](https://anaconda.org/conda-forge/dash) `conda install -c conda-forge dash`
