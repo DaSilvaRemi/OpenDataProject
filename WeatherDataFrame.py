@@ -2,6 +2,9 @@ import pandas as pd
 
 
 class WeatherDataFrame:
+    """
+    Classe gérant la dataframe de la météo
+    """
     def __init__(self, csv_file_name: str) -> None:
         """
         Constructeur de WeatherDataFrame

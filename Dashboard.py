@@ -12,6 +12,9 @@ from WeatherDataFrame import WeatherDataFrame
 
 
 class Dashboard:
+    """
+    Classe gérant toutes les génération pour l'affichage du dashboard et affiche le dashboard.
+    """
     def __init__(self, weather_data_frame: WeatherDataFrame, map_file_name: str = 'map.html') -> None:
         """
         Constructeur de la classe Dashboard
