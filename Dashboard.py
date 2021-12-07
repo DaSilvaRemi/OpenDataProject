@@ -11,6 +11,7 @@ from typing import Tuple
 
 from WeatherDataFrame import WeatherDataFrame
 
+
 class Dashboard:
     def __init__(self, weather_data_frame: WeatherDataFrame, map_file_name: str = 'map.html') -> None:
         """
@@ -205,18 +206,6 @@ class Dashboard:
                                 html.P(
                                     children=f'''Le graphe çi-dessous est le graphe de l'évolution de la température sur une année''')
                             ]),
-
-                        dcc.Dropdown(
-                            id='start_month_dropdown',
-                            options=month_drop_down_option,
-                            value='1'
-                        ),
-
-                        dcc.Dropdown(
-                            id='end_month_dropdown',
-                            options=month_drop_down_option,
-                            value='1'
-                        ),
 
                         dcc.Graph(
                             id='Scatter graph',
