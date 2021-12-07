@@ -11,6 +11,8 @@ from typing import Tuple
 
 from WeatherDataFrame import WeatherDataFrame
 
+app = None
+
 
 class Dashboard:
     def __init__(self, weather_data_frame: WeatherDataFrame, map_file_name: str = 'map.html') -> None:
