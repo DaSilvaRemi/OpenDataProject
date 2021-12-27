@@ -101,19 +101,19 @@ Afin d'assurer le bon fonctionnement du projet, vous devez d'abord configurer le
 
 1) Configuration avec Anaconda
 Merci de suivre les étapes çi-dessous pour vous assurer d'avoir votre anaconda de configurer.
-- [Création d'environnement anaconda](#Creation d'environnement anaconda)
-- [Les librairies](#Les librairies)
+- [Création d'environnement anaconda](#40)
+- [Les librairies](#41)
 
 2) Configuration par fichier requirement.txt avec pip
 Veuillez exécuter cette commande `pip install -r requirements.txt`.
 
 Après avoir suivi une des deux étapes vous pouvez passer à l'étape [Executer notre application](#Executer notre application).
 
-#### Creation d'environnement anaconda
+<h2 id="40">Creation d'environnement anaconda</h2>
 Vous devrez créer un nouvel environnement Anaconda que vous appellerez avec le nom de votre choix, dans notre cas nous l'avons appelé "complete"
 Afin de créer un environnement anaconda en ligne de commande merci d'exécuter cette ligne `conda create --name complete`. Vous pouvez remplacer le complete par le nom de votre choix pour l'environnement.
 
-#### Les librairies
+###<h3 id="41"> Les librairies</h3>
 Il est nécessaire de télécharger avec Anaconda toutes ces librairies :
 - [BRANCA](https://anaconda.org/conda-forge/branca) `conda install -c conda-forge branca`
 - [DASH](https://anaconda.org/conda-forge/dash) `conda install -c conda-forge dash`
@@ -133,11 +133,11 @@ Une fois le programme exécuté vous verrez apparaitre une URL sur le CMD anacon
 
 # Developer Guide
 
-Ci-dessous se trouve le diagramme de classe.
+Ci-dessous ce trouve le diagramme de classe.
 Toutes les classes çi dessous sont appelé par notre fichier main.
 Nous allons vous expliquer le role des différentes classes :
 - WeatherDataFrame : Elle gère la création, le formatage de la dataframe avec les données météos.
-- Dashboard : Elle gère la création des différents éléments graphiques telle que la map, l'histogramme et le dashboard.
+- Dashboard : Elle gère la création des différent éléments graphiques tel que la map, l'histogramme et le dashboard.
 
 Nous pensons que la classe Dashboard peut être étendu en deux sous classe s'appelant Fig et Map gérant l'histogramme et la map.
 ```mermaid
