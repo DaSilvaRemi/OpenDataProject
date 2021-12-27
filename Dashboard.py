@@ -7,7 +7,6 @@ import numpy as np
 import pandas
 import plotly_express as px
 from typing import Tuple
-
 from WeatherDataFrame import WeatherDataFrame
 
 
