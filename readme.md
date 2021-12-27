@@ -106,7 +106,8 @@ Merci de suivre les étapes çi-dessous pour vous assurer d'avoir votre anaconda
 - [Les librairies](#41)
 
 2) Configuration par fichier requirement.txt avec pip
-Veuillez exécuter cette commande `pip install -r requirements.txt`.
+Veuillez exécuter cette commande :
+`pip install -r requirements.txt`
 
 Après avoir suivi une des deux étapes vous pouvez passer à l'étape [Executer notre application](#Executer notre application).
 
