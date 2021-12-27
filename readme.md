@@ -133,7 +133,7 @@ En respectant les prérequis précédemment cités. Executer notre application s
 
 **AVERTISSEMENT** 
 Selon la version de python que vous avez des UserWarning peuvent être affichés, cela est du qu'une des bibliothèques que nous utilisons n'a pas encore été mis à jour selon les versions les plus récentes de python.
-Notre serveur lançant notre application est un serveur de développement afin que vous puissiez avoir plus de détail sur l'application. Cela vous affichera un warning par défaut merci de pas en prendre compte.
+Notre serveur lançant notre application est un serveur de développement. Nous avons procédé à ce choix afin que vous puissiez avoir plus de détail sur l'application. Cela vous affichera un warning par défaut merci de pas en prendre compte.
 
 ### Via Anaconda
 Exécuter les commandes suivantes sur le CMD anaconda (Anaconda Prompt) afin de lancer notre programme :
