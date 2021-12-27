@@ -132,7 +132,7 @@ class Dashboard:
 
     def create_dash(self, histogramme_fig: object, scatter_fig: object) -> None:
         """
-        Créer un dashboard/application web à partir d'une map et d'un histogramme
+        Créer un dashboard/une application web à partir d'une map et d'un histogramme
 
         Parameters
         ----------
@@ -218,7 +218,7 @@ class Dashboard:
             ]
         )
 
-    def run_dash(self):
+    def run_dash(self) -> None:
         """
         Exécute le dashboard
         """
