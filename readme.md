@@ -132,7 +132,8 @@ Il est nécessaire de télécharger avec Anaconda toutes ces librairies :
 En respectant les prérequis précédemment cités. Executer notre application selon l'outil que vous avez choisi.
 
 **AVERTISSEMENT** 
-Selon la version de python que vous avez des UserWarning peuvent être affichés, celà est du qu'une des bibliothèque que nous utilisons n'a pas encore été mis à jour selon les version les plus récente de python.
+Selon la version de python que vous avez des UserWarning peuvent être affichés, cela est du qu'une des bibliothèques que nous utilisons n'a pas encore été mis à jour selon les versions les plus récentes de python.
+Notre serveur lançant notre application est un serveur de développement afin que vous puissiez avoir plus de détail sur l'application. Cela vous affichera un warning par défaut merci de pas en prendre compte.
 
 ### Via Anaconda
 Exécuter les commandes suivantes sur le CMD anaconda (Anaconda Prompt) afin de lancer notre programme :
