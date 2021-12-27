@@ -175,7 +175,7 @@ class Dashboard:
                         ),
 
                         html.P(
-                            children=f'''L'histogramme çi-dessus montre le nombre de villes qui sont concerné
+                            children=f'''L'histogramme ci-dessus montre le nombre de villes qui sont concernées
                                     par un intervalle de température.
                                     Cela nous permet d'en déduire les moyennes et tendances de températures en France.
                                     '''
@@ -191,7 +191,7 @@ class Dashboard:
                                     style={'textAlign': 'center', 'color': '#7FDBFF'}),
 
                                 html.P(
-                                    children=f'''Le graphe çi-dessous est le graphe de l'évolution
+                                    children=f'''Le graphe ci-dessous est le graphe de l'évolution
                                      de la température sur une année''')
                             ]),
 
