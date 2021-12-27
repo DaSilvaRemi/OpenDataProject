@@ -79,7 +79,8 @@ Pour cloner notre repository lancer git bash et allez sur un répertoire où vou
 `git clone https://git.esiee.fr/dasilvar/dasilvaremi_gaochang_opendataproject.git`
 
 ### Les outils
-Afin d'exécuter notre application, il vous sera donc nécessaire d'avoir python. Vous pouvez télécharger Python sur le site officiel de [Python](https://www.python.org/downloads/).
+Afin d'exécuter notre application, il vous sera donc nécessaire d'avoir python. 
+Vous pouvez télécharger Python sur le site officiel de [Python](https://www.python.org/downloads/) (Nous utilisons la version **3.8**).
 Vous avez deux moyens à votre disposition afin de télécharger les librairies nécessaire à notre projet, soit via Anaconda, soit via PIP
 
 #### ANACONDA
@@ -129,6 +130,10 @@ Il est nécessaire de télécharger avec Anaconda toutes ces librairies :
 
 ## Executer notre application
 En respectant les prérequis précédemment cités. Executer notre application selon l'outil que vous avez choisi.
+
+**AVERTISSEMENT** Selon la version de python que vous avez sur votre or
+
+
 ### Via Anaconda
 Exécuter les commandes suivantes sur le CMD anaconda (Anaconda Prompt) afin de lancer notre programme :
 - `conda activate complete`
