@@ -9,3 +9,4 @@ folium
 pandas
 plotly
 plotly_express
+waitress

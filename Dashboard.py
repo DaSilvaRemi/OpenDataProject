@@ -6,6 +6,7 @@ import folium
 import numpy as np
 import pandas
 import plotly_express as px
+from waitress import serve
 from typing import Tuple
 
 from WeatherDataFrame import WeatherDataFrame
@@ -223,7 +224,7 @@ class Dashboard:
         Exécute le dashboard
         """
         # RUN APP
-        self.app.run_server(debug=True)
+        serve(self.app, host="127.0.0.1", port=8080)
 
     def show_dash(self) -> None:
         """

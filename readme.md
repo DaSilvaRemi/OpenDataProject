@@ -131,8 +131,8 @@ Il est nécessaire de télécharger avec Anaconda toutes ces librairies :
 ## Executer notre application
 En respectant les prérequis précédemment cités. Executer notre application selon l'outil que vous avez choisi.
 
-**AVERTISSEMENT** Selon la version de python que vous avez sur votre or
-
+**AVERTISSEMENT** 
+Selon la version de python que vous avez des UserWarning peuvent être affichés, celà est du qu'une des bibliothèque que nous utilisons n'a pas encore été mis à jour selon les version les plus récente de python.
 
 ### Via Anaconda
 Exécuter les commandes suivantes sur le CMD anaconda (Anaconda Prompt) afin de lancer notre programme :
