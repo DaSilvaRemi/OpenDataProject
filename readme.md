@@ -95,7 +95,9 @@ C'est le module par default d'installation des librairies sur python.
 Si vous ne l'avez pas nous vous invitons à suivre la procédure indiquée sur la [documentation de PIP](https://pip.pypa.io/en/stable/installation/).
 
 ## Configuration du projet
-Afin d'assurer le bon fonctionnement du projet, vous devez d'abord configurer le projet en suivant soit l'étape 1 ou 2.
+Afin d'assurer le bon fonctionnement du projet, vous devez d'abord ouvrir un CMD puis exécuter la commande suivante (en changeant "CheminVersLeRépertoire") :
+`cd CheminVersLeRépertoireDuProjet\OpenDataProject`
+Ensuite à partir de ce CMD configurer le projet en suivant soit l'étape 1 ou 2.
 
 - **Avertissemment : Merci de suivre les prérequis précédant afin de télécharger les outils nécessaire à l'installation.**
 - **Remarque : Si vous suivez l'étape 1 vous aurez besoin d'anaconda.**
@@ -126,11 +128,18 @@ Il est nécessaire de télécharger avec Anaconda toutes ces librairies :
 - [PLOTLY-EXPRESS](https://anaconda.org/plotly/plotly_express) `conda install -c plotly plotly_express`
 
 ## Executer notre application
-En respectant les prérequis précédemment cités, exécuter les commandes suivantes sur le CMD anaconda (Anaconda Prompt) afin de lancer notre programme :
+En respectant les prérequis précédemment cités. Executer notre application selon l'outil que vous avez choisi.
+### Via Anaconda
+Exécuter les commandes suivantes sur le CMD anaconda (Anaconda Prompt) afin de lancer notre programme :
 - `conda activate complete`
 - `cd CheminVersLeRépertoireDuProjet\OpenDataProject`
 - `python main.py`
-Une fois le programme exécuté vous verrez apparaitre une URL sur le CMD anaconda copiez là et collez là sur votre navigateur. Dans notre cas l'url est la suivante :
+### Via PIP
+Exécuter les commandes suivantes sur le CMD afin de lancer notre programme :
+- `cd CheminVersLeRépertoireDuProjet\OpenDataProject`
+- `python main.py`
+
+Une fois le programme exécuté vous verrez apparaitre une URL sur le CMD copiez là et collez là sur votre navigateur. Dans notre cas l'url est la suivante :
 [MeteoProject-Localhost](http://127.0.0.1:8050/) : `http://127.0.0.1:8050/`
 
 # Developer Guide
