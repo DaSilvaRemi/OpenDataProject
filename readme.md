@@ -115,7 +115,7 @@ Après avoir suivi une des deux étapes vous pouvez passer à l'étape [Executer
 Vous devrez créer un nouvel environnement Anaconda que vous appellerez avec le nom de votre choix, dans notre cas nous l'avons appelé "complete"
 Afin de créer un environnement anaconda en ligne de commande merci d'exécuter cette ligne `conda create --name complete`. Vous pouvez remplacer le complete par le nom de votre choix pour l'environnement.
 
-###<h3 id="41"> Les librairies</h3>
+<h3 id="41"> Les librairies</h3>
 Il est nécessaire de télécharger avec Anaconda toutes ces librairies :
 - [BRANCA](https://anaconda.org/conda-forge/branca) `conda install -c conda-forge branca`
 - [DASH](https://anaconda.org/conda-forge/dash) `conda install -c conda-forge dash`
