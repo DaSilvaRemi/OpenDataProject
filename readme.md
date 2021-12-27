@@ -97,8 +97,8 @@ Si vous ne l'avez pas nous vous invitons à suivre la procédure indiquée sur l
 ## Configuration du projet
 Afin d'assurer le bon fonctionnement du projet, vous devez d'abord configurer le projet en suivant soit l'étape 1 ou 2.
 
-**Avertissemment : Merci de suivre les prérequis précédant afin de télécharger les outils nécessaire à l'installation**
-**Remarque : Si vous suivez l'étape 1 vous aurez besoin d'anaconda**
+- **Avertissemment : Merci de suivre les prérequis précédant afin de télécharger les outils nécessaire à l'installation.**
+- **Remarque : Si vous suivez l'étape 1 vous aurez besoin d'anaconda.**
 
 1) Configuration avec Anaconda
 Merci de suivre les étapes çi-dessous pour vous assurer d'avoir votre anaconda de configurer.
