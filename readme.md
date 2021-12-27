@@ -58,7 +58,7 @@ Nous pouvons donc en conclure que les DOM-TOM du SUD ont des températures bien 
 
 # User Guide
 ## Prérequis
-Notre application est une application web en python. Dans notre cas, nous gérons les librairies avec le gestionnaire de librairies Anaconda 3. Vous pouvez tout à fait faire sans Anaconda.
+Notre application est une application web en python. Dans notre cas, nous gérons les librairies avec le gestionnaire de librairies Anaconda 3. Vous pouvez tout à fait exécuter notre application sans Anaconda.
 
 ### Le code source
 Afin d'exécuter notre application, vous aurez besoin d'avoir notre code source disponible sur ce [repository.](https://git.esiee.fr/dasilvar/dasilvaremi_gaochang_opendataproject.git)
