@@ -52,7 +52,6 @@ class Dashboard:
         """
         Créer une carte à partir de la DataFrame formatée pour la carte. Sauvegarde la map crée dans un fichier HTML.
         """
-
         latitude_values = self.map_data_frame['latitude'].values
         longitude_values = self.map_data_frame['longitude'].values
         temp_moy_values = self.map_data_frame['temp_C'].round(2).values

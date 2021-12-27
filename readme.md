@@ -2,7 +2,7 @@
 
     Par DA SILVA REMI et GAO CHANG
 
-Pour cloner notre repoistory faite `git clone https://git.esiee.fr/dasilvar/dasilvaremi_gaochang_opendataproject.git`
+Pour cloner notre repository faite `git clone https://git.esiee.fr/dasilvar/dasilvaremi_gaochang_opendataproject.git`
 
 # Description
 L'objectif du mini projet est de traiter un sujet d'intérêt public. Nous utiliserons des données publiques d'Open Data.
@@ -33,14 +33,14 @@ Les données seront découpées selon les intervalles suivante :
 # Rapport d'analyse
 
 ## Analyse de l'histogramme
-L'histogramme que vous trouvez çi-dessous à été générée selon les données de 2021.
+L'histogramme que vous trouvez çi-dessous a été générée selon les données de 2021.
 Nous pouvons tout d'abord remarqué que la température moyenne oscille entre 3 et 35 C°. Nous apercevons une température moyenne globale de 13.5 °C en France, nous pouvons en conclure que les températures ont été assez froide en 2021.
 ![Histogramme météo 2021](images/Histogramme2021.png)
 
 ## Analyse de l'évolution de température en 2021
 Le graph que vous voyez çi dessous est l'évolution des températures pour une région sur l'année 2021. 
 Nous remarquons que les températures sont assez égale en 2021 pour un même mois, cependant nous pouvons remarquer de très fortes températures dans les DOM-TOM.
-Nous pouvons donc déjà établir une première hyptohèse que les DOM-TOM ont des températures bien plus élevé que le reste de la France. Nous vérifierons cette hypothèse dans la prochaine partie.
+Nous pouvons donc déjà établir une première hypothèse que les DOM-TOM ont des températures bien plus élevées que le reste de la France. Nous vérifierons cette hypothèse dans la prochaine partie.
 ![Graphe evolution température 2021](images/GrapheEvol2021.png)
 
 ## Analyse de la carte
@@ -52,18 +52,18 @@ Nous pouvons donc en conclure que les températures de la France sont assez froi
 ![Carte météo métropole](images/CarteMeteoMetropole2021.png)
 
 La carte çi-dessous est la carte météo en Guyane selon les données de 2021.
-Contrairement à la carte précedente les températures sont bien plus élevés étant donné qu'elles oscillent entre 25 et 29 °C.
-Nous pouvons donc en conclure que les DOM-TOM du SUD ont des températures bien plus chaudes que celle de la France et ont donc moins de température froide en dessous de 20°C.
+Contrairement à la carte précédente les températures sont bien plus élevés étant donné qu'elles oscillent entre 25 et 29 °C.
+Nous pouvons donc en conclure que les DOM-TOM du SUD ont des températures bien plus chaudes que celle de la France et ont donc moins de température froide en dessous de d20 °C.
 ![Carte météo guyane](images/CarteMeteoGuyane2021.png)
 
 # User Guide
 ## Prérequis
-Notre application est une application web en python. Nous gérons les librairies avec le gestionnaires de librairies Anaconda 3.
+Notre application est une application web en python. Dans notre cas, nous gérons les librairies avec le gestionnaire de librairies Anaconda 3. Vous pouvez tout à fait faire sans Anaconda.
 
 ### Le code source
-Afin d'exécuter notre application vous aurez besoin d'avoir notre code source disponible sur ce [repository](https://git.esiee.fr/dasilvar/dasilvaremi_gaochang_opendataproject.git)
-Vous avez deux moyens de télécharger notre code source, soit vous télécharger le fichier ZIP disponible sur notre repository en cliquant sur l'icone download à coté de l'option clone.
-Soit, vous clonez notre repository via git, afin de faire cela vous pouvez suivre les instructions çi-dessous.
+Afin d'exécuter notre application, vous aurez besoin d'avoir notre code source disponible sur ce [repository.](https://git.esiee.fr/dasilvar/dasilvaremi_gaochang_opendataproject.git)
+Vous avez deux moyens de télécharger notre code source, soit vous télécharger le fichier ZIP disponible sur notre repository en cliquant sur l'icône download à côté de l'option clone.
+Soit, vous clonez notre repository via Git, afin de faire cela vous pouvez suivre les instructions çi-dessous.
 
 #### Installer git
 Afin d'installer git aller sur le [site officiel de git](https://git-scm.com/downloads), puis choisissez votre OS et suivez les étapes d'installation.
@@ -79,17 +79,24 @@ Pour cloner notre repository lancer git bash et allez sur un répertoire où vou
 `git clone https://git.esiee.fr/dasilvar/dasilvaremi_gaochang_opendataproject.git`
 
 ### Les outils
-Afin d'exécuter notre application, il vous sera donc nécessaire d'avoir python. Afin de faciliter l'installation nous utilisons dans notre cas le gestionnaire Anaconda.
+Vous avez deux moyens à votre disposition afin de télécharger les librairies nécessaire à notre projet, soit via Anaconda, soit via PIP
+
+#### ANACONDA
+Afin d'exécuter notre application, il vous sera donc nécessaire d'avoir python. Afin de faciliter l'installation, nous utilisons dans notre cas le gestionnaire Anaconda.
 - [Anaconda Invidual Edition](https://www.anaconda.com/products/individual) : C'est un package disposant des éléments suivant :
   - Le gestionnaire Anaconda permettant d'installer les libraires souhaité avec une interface graphique ou en ligne de commande
   - Python 3.8 permettant d'éxécuter notre application 
 Il vous sera nécessaire lors de l'installation d'anaconda de cocher l'option pour set la variable PATH de windows.
   - ![OptionAnaconda.png](images/OptionAnaconda.png)
 
+#### PIP
+C'est le module par default d'installation des librairies sur python.
+Si vous ne l'avez pas nous vous invitons à suivre la procédure indiquée sur la [documentation de PIP](https://pip.pypa.io/en/stable/installation/)
 
 ## Configuration du projet
-Afin d'assurer le bon fonctionnement du projet vous devez d'abord configurer le projet en suivant soit l'étape 1 ou 2.
+Afin d'assurer le bon fonctionnement du projet, vous devez d'abord configurer le projet en suivant soit l'étape 1 ou 2.
 
+**Avertissemment : Merci de suivre les prérequis précédant afin de télécharger les outils nécessaire à l'installation**
 **Remarque : Si vous suivez l'étape 1 vous aurez besoin d'anaconda**
 
 1) Configuration avec Anaconda
@@ -126,11 +133,11 @@ Une fois le programme exécuté vous verrez apparaitre une URL sur le CMD anacon
 
 # Developer Guide
 
-Ci-dessous ce trouve le diagramme de classe.
+Ci-dessous se trouve le diagramme de classe.
 Toutes les classes çi dessous sont appelé par notre fichier main.
 Nous allons vous expliquer le role des différentes classes :
 - WeatherDataFrame : Elle gère la création, le formatage de la dataframe avec les données météos.
-- Dashboard : Elle gère la création des différent éléments graphiques tel que la map, l'histogramme et le dashboard.
+- Dashboard : Elle gère la création des différents éléments graphiques telle que la map, l'histogramme et le dashboard.
 
 Nous pensons que la classe Dashboard peut être étendu en deux sous classe s'appelant Fig et Map gérant l'histogramme et la map.
 ```mermaid
