@@ -1,7 +1,5 @@
 import branca
-import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dash, dcc, html
 import folium
 import numpy as np
 import pandas
@@ -222,7 +220,7 @@ class Dashboard:
         Exécute le dashboard
         """
         # RUN APP
-        self.app.run_server(debug=True)
+        self.app.run_server()
 
     def show_dash(self) -> None:
         """
