@@ -9,7 +9,7 @@ L'objectif du mini projet est de traiter un sujet d'intérêt public. Nous utili
 
 Nous avons décidé de choisir comme sujet la météo, qui est donc un sujet un commun à chacun.
 
-Nous allons afficher les températures moyenne annuel d'une année en France. Nous affichons également il y a aussi une carte qui permet de visualiser les températures moyenne annuel en France.
+Nous allons afficher les températures moyenne annuel d'une année en France. Nous affichons également une carte qui permet de visualiser les températures moyenne annuel en France.
 
 ## Traitement des données
 Nous les avons pris sur le site OpenDataSoft qui est un site où on peut retrouver la majorité des données ouvertes. 
@@ -33,25 +33,25 @@ Les données seront découpées selon les intervalles suivante :
 # Rapport d'analyse
 
 ## Analyse de l'histogramme
-L'histogramme que vous trouvez çi-dessous a été générée selon les données de 2021.
+L'histogramme que vous trouvez ci-dessous a été générée selon les données de 2021.
 Nous pouvons tout d'abord remarqué que la température moyenne oscille entre 3 et 35 C°. Nous apercevons une température moyenne globale de 13.5 °C en France, nous pouvons en conclure que les températures ont été assez froide en 2021.
 ![Histogramme météo 2021](images/Histogramme2021.png)
 
 ## Analyse de l'évolution de température en 2021
-Le graph que vous voyez çi dessous est l'évolution des températures pour une région sur l'année 2021. 
+Le graph que vous voyez ci-dessous est l'évolution des températures pour une région sur l'année 2021. 
 Nous remarquons que les températures sont assez égale en 2021 pour un même mois, cependant nous pouvons remarquer de très fortes températures dans les DOM-TOM.
 Nous pouvons donc déjà établir une première hypothèse que les DOM-TOM ont des températures bien plus élevées que le reste de la France. Nous vérifierons cette hypothèse dans la prochaine partie.
 ![Graphe evolution température 2021](images/GrapheEvol2021.png)
 
 ## Analyse de la carte
-La carte çi-dessous est la carte météo selon les données de 2021.
+La carte ci-dessous est la carte météo selon les données de 2021.
 Nous pouvons remarquer comme sur l'histogramme que les températures sont assez froides étant donné qu'elles oscillent 9 et 17.2 °C.
 Nous remarquons également que le SUD EST de la France à des températures plus élevée que le reste de la France.
 Nous pouvons donc en conclure que les températures de la France sont assez froide en 2021 et que le sud est la partie la plus chaude de la France. <br/>
 
 ![Carte météo métropole](images/CarteMeteoMetropole2021.png)
 
-La carte çi-dessous est la carte météo en Guyane selon les données de 2021.
+La carte ci-dessous est la carte météo en Guyane selon les données de 2021.
 Contrairement à la carte précédente les températures sont bien plus élevés étant donné qu'elles oscillent entre 25 et 29 °C.
 Nous pouvons donc en conclure que les DOM-TOM du SUD ont des températures bien plus chaudes que celle de la France et ont donc moins de température froide en dessous de d20 °C.
 ![Carte météo guyane](images/CarteMeteoGuyane2021.png)
@@ -132,7 +132,6 @@ Il est nécessaire de télécharger avec Anaconda toutes ces librairies :
 En respectant les prérequis précédemment cités. Executer notre application selon l'outil que vous avez choisi.
 
 **AVERTISSEMENT** 
-Selon la version de python que vous avez des UserWarning peuvent être affichés, cela est du qu'une des bibliothèques que nous utilisons n'a pas encore été mis à jour selon les versions les plus récentes de python.
 Notre serveur lançant notre application est un serveur de développement. Nous avons procédé à ce choix afin que vous puissiez avoir plus de détail sur l'application. Cela vous affichera un warning par défaut merci de pas en prendre compte.
 
 ### Via Anaconda
